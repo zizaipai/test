@@ -1,9 +1,0 @@
-<root>
-    <books>
-	<book>
-	    <name>Git教程/name>
-	    <author> Mr King</author>
-	    <price> $ 23.00 </price>
-	</book>
-    </books>
-</root>
