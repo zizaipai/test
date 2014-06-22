@@ -21,6 +21,7 @@
 7、查看日志
     git log
     git log --pretty=oneline 一行显示日志
+	git log --graph --pretty=oneline --abbrev-commit 查看分支的合并情况
     git reflog 查看所有的记录日志，包括撤销操作
     
 8、删除文件 
@@ -49,13 +50,18 @@
 	git checkout  commit_id file_name  //取文件file_name的 在commit_id时的版本。commit_id为 git commit 时的sha值。
 	
 14、创建分支
-
+	git checkout -b dev 相当于下面两个命令
+	git branch dev
+	git checkout dev
+	git push origin dev 将本地分支dev提交到远程库
 
 15、合并分支
-
+	先进入到master分支（git checkout master）,再执行如下命令合并。
+	git merge dev
 
 16、删除分支
-	
+	git branch -d dev 如果当前分支已经提交到远程库，执行此命令只会删除本地的dev分支，不会删除远程分支。
+	git push origin :dev 执行此命令才会删除远程分支。
 
 
 
