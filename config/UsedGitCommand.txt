@@ -1,0 +1,65 @@
+1、配置  
+    git config
+    设置：git config --global user.name "Your Name"
+    查看：git config user.name
+    
+2、初始化Git仓库
+    git init
+    
+3、添加文件
+    git add
+    
+4、提交
+    git commit -m "Your comment."
+    
+5、查看状态
+    git status
+    
+6、查看不同
+    git diff filename
+    
+7、查看日志
+    git log
+    git log --pretty=oneline 一行显示日志
+    git reflog 查看所有的记录日志，包括撤销操作
+    
+8、删除文件 
+    git rm file
+    
+9、还原到某个版本
+    git reset --hard HEAD^  恢复到当前最新版本
+    git reset ID 恢复到指定版本
+    
+10、本地仓库、关联远程仓库
+    git remote add origin https://github.com/WhyNoDoIt/test.git  
+    其中origin 是https://github.com/WhyNoDoIt/test.git 在本地的别名。
+    
+11、提交到远程仓库
+    git push origin master
+    第一次提交需要使用-u 参数： git push -u origin master; master 是当前主分支名。
+    
+12、获取远程库信息
+    git pull origin master
+    
+13、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
