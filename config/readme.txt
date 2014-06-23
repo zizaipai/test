@@ -4,5 +4,5 @@ git branch test.
 
 dev branch operation.
 
-add credential help, avoid every commits input username and password.
+add credential help,er avoid every commits input username and password.
 
