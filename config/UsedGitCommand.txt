@@ -65,6 +65,11 @@
 	
 17、git remote -v  //查看你当前项目远程连接的是哪个仓库地址。	
 
+18、 避免每次https 方式提交都要输入密码
+	C:/Users/Adminastrator/ 目录下创建.git-credentials文件，添加如下内容：https://Your Username:Your password@github.com
+	再执行如下命令：
+	git config --global credential.helper
+	在重新启动Git Bash。 OK 现在https方式提交也不用输入用户名密码了。
 
 
 
