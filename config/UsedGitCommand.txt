@@ -57,7 +57,10 @@
 
 15、合并分支
 	先进入到master分支（git checkout master）,再执行如下命令合并。
-	git merge dev
+	git merge dev （这种方式是fast-forward） git log时看不到合并记录，若要记录合并日志，则使用下面的命令：
+	git merge --no-ff -m "merge with no-ff" dev
+	
+	
 
 16、删除分支
 	git branch -d dev 如果当前分支已经提交到远程库，执行此命令只会删除本地的dev分支，不会删除远程分支。
