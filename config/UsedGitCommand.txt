@@ -35,10 +35,13 @@
 10、本地仓库、关联远程仓库
     git remote add origin https://github.com/WhyNoDoIt/test.git  
     其中origin 是https://github.com/WhyNoDoIt/test.git 在本地的别名。
+	git remote  查看远程库
+	git remote -v 查看fetch、push到的远程仓库
     
 11、提交到远程仓库
-    git push origin master
+    git push origin master 推送到远程主分支上
     第一次提交需要使用-u 参数： git push -u origin master; master 是当前主分支名。
+	git push origin dev 推送到远程其他分支上
     
 12、获取远程库信息
     git pull origin master
@@ -58,15 +61,14 @@
 15、合并分支
 	先进入到master分支（git checkout master）,再执行如下命令合并。
 	git merge dev （这种方式是fast-forward） git log时看不到合并记录，若要记录合并日志，则使用下面的命令：
-	git merge --no-ff -m "merge with no-ff" dev
-	
-	
+	git merge --no-ff -m "merge with no-ff" dev	
 
 16、删除分支
 	git branch -d dev 如果当前分支已经提交到远程库，执行此命令只会删除本地的dev分支，不会删除远程分支。
 	git push origin :dev 执行此命令才会删除远程分支。
 	
-17、git remote -v  //查看你当前项目远程连接的是哪个仓库地址。	
+17、git clone https://github.com/WhyNoDoIt/test.git
+	将远程仓库克隆到本地。
 
 18、 避免每次https 方式提交都要输入密码
 	C:/Users/Adminastrator/ 目录下创建.git-credentials文件，添加如下内容：https://Your Username:Your password@github.com
