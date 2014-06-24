@@ -74,6 +74,11 @@
 	git config --global credential.helper store
 	在重新启动Git Bash。 OK 现在https方式提交也不用输入用户名密码了。
 
+19、Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：
+	git stash 储藏当前工作现场 执行此命令后， 使用git status 查看当前状态是干净的。
+	git stash list 查看当前储藏的列表
+	git stash apply stash@{0} 用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop stash@{0} 来删除；
+	git stash pop 此命令恢复后会自动删除
 
 
 
