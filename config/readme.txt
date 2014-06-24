@@ -6,3 +6,5 @@ dev branch operation.
 
 add credential helper, avoid every commits input username and password.
 
+merge with no-off pattern.
+
