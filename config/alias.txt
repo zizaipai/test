@@ -11,3 +11,7 @@ git config --global alias.cmt 'commit'
 git config --global alias.plom 'pull origin master'
 
 git config --global alias.psom 'push origin master'
+
+git config --global alias.glg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+git config --global alias.mg merge
