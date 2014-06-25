@@ -81,9 +81,21 @@
 	git stash list 查看当前储藏的列表
 	git stash apply stash@{0} 用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop stash@{0} 来删除；
 	git stash pop 此命令恢复后会自动删除
+	
+20、标签
+	git tag 查看标签  
+	git tag  -l v1* 查看v1开头的标签
+	git tag v1.0 创建标签v1.0 
+	git tag -a v1.0 -m "first tag." commitid 用-a指定标签名，-m指定说明文字 commitid 提交ID
+    git tag -s v0.2 -m "signed version 0.2 released" fec145a 通过-s用私钥签名一个标签
+	git show tagname  查看标签信息
+    git tag -d v0.1 删除标签
+    git push origin tagname 要推送某个标签到远程
+	git push origin --tags 一次性推送全部尚未推送到远程的本地标签
+	如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除：git tag -d v0.9
+	然后，从远程删除。删除命令也是push，但是格式如下：git push origin :refs/tags/v0.9
 
-
-
+ 
 
 
 
