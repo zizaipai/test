@@ -1,0 +1,13 @@
+git conig --global alias.st status
+
+git config --global alias.ct checkout
+
+git config --global alias.br branch
+
+git config --global alias.olg 'log --pretty=oneline'
+
+git config --global alias.cmt 'commit'
+
+git config --global alias.plom 'pull origin master'
+
+git config --global alias.psom 'push origin master'
